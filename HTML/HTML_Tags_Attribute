@@ -1,0 +1,195 @@
+# HTML Tag Attributes ✨
+
+HTML attributes are like extra bits of information that you can add to HTML tags. They help describe or modify the behavior of an element. Think of them like the "features" or "details" about an object. For example, if a person has blue eyes, that would be an attribute of the person, just as color or style can be attributes of HTML tags.
+
+## How to Use Attributes
+
+Attributes are always added inside the opening tag of an HTML element. You can think of it like attaching labels to boxes, which give more information about the box.
+
+Here’s the basic syntax to add an attribute to an element:
+
+```html
+<element attribute="value">Content here</element>
+```
+
+For example:
+
+```html
+<div title="about me">
+    <p>I am James</p>
+</div>
+```
+
+In this case, the title attribute is added to the `<div>` tag. When a user hovers their mouse over the `<div>`, a little popup appears with the text "about me". This is a simple example of using an attribute for extra functionality.
+
+---
+
+## HTML Attributes:
+
+### 1. **Global Attributes**
+
+These attributes can be used with any HTML element.
+
+- **`id=""`**: Specifies a unique identifier for the element.
+- **`class=""`**: Specifies one or more class names for the element (for CSS styling).
+- **`style=""`**: Used to define inline CSS styles for the element.
+- **`title=""`**: Provides additional information about the element, usually displayed when the user hovers over it.
+- **`data-*`**: Allows you to store custom data for any HTML element (the `*` is a placeholder for the custom name).
+
+#### Example (Global Attributes):
+
+```html
+<div id="section-1" class="highlight" style="color: blue;" title="This is a blue section" data-user-id="123">
+    This div has global attributes!
+</div>
+```
+
+### 2. **Form Elements Attributes**
+
+Used specifically within forms.
+
+- **`action=""`**: Specifies where to send the form data when the form is submitted (usually a URL).
+- **`method=""`**: Specifies the HTTP method to use when sending form data (`GET` or `POST`).
+- **`name=""`**: Specifies the name of the form element, used for identification in scripts or when submitting data.
+- **`placeholder=""`**: Provides a short hint or description of the expected input in an input field.
+- **`required`**: Makes an input field mandatory before submitting the form.
+- **`value=""`**: Specifies the default value for input elements, such as text boxes, checkboxes, etc.
+
+#### Example (Form Attributes):
+
+```html
+<form action="/submit" method="POST">
+    <input type="text" name="username" placeholder="Enter your username" required>
+    <button type="submit">Submit</button>
+</form>
+```
+
+### 3. **Image Elements Attributes**
+
+- **`srcset=""`**: Provides a set of images for different screen sizes (used for responsive design).
+- **`width=""` and `height=""`**: Specifies the width and height of an image.
+- **`loading=""`**: Specifies when the image should be loaded (e.g., `lazy` or `eager` for lazy loading).
+- **`alt=""`**: Provides a description of the image for accessibility or when the image can't be displayed.
+
+#### Example (Image Attributes):
+
+```html
+<img src="image.jpg" alt="A beautiful landscape" width="600" height="400" loading="lazy">
+```
+
+### 4. **Audio and Video Elements Attributes**
+
+Used for embedding media in HTML.
+
+- **`controls`**: Adds play, pause, volume, and other controls to media elements.
+- **`autoplay`**: Automatically plays the media when loaded.
+- **`muted`**: Mutes the media when it starts.
+- **`loop`**: Makes the media loop infinitely.
+- **`poster=""`**: Specifies an image to be shown while the video is loading.
+
+#### Example (Audio and Video Attributes):
+
+```html
+<video controls autoplay muted loop poster="thumbnail.jpg">
+    <source src="movie.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+```
+
+### 5. **Anchor (Link) Attributes**
+
+- **`target=""`**: Specifies where to open the linked document.
+  - `_blank`: Open in a new tab.
+  - `_self`: Open in the same frame (default).
+  - `_parent` or `_top`: Open in the parent or top frame.
+- **`rel=""`**: Specifies the relationship between the current document and the linked document (e.g., `nofollow`, `noopener`).
+
+#### Example (Anchor Tag Attributes):
+
+```html
+<a href="https://www.example.com" target="_blank" rel="noopener">Go to Example</a>
+```
+
+### 6. **Table Attributes**
+
+- **`colspan=""`**: Specifies the number of columns a table cell should span.
+- **`rowspan=""`**: Specifies the number of rows a table cell should span.
+- **`scope=""`**: Specifies whether the header cell is for a column, row, or group of columns/rows.
+
+#### Example (Table Attributes):
+
+```html
+<table>
+    <tr>
+        <th colspan="2">Header spanning two columns</th>
+    </tr>
+    <tr>
+        <td rowspan="2">Rowspan Example</td>
+        <td>Cell 2</td>
+    </tr>
+    <tr>
+        <td>Cell 3</td>
+    </tr>
+</table>
+```
+
+### 7. **Input Type Attributes**
+
+- **`type=""`**: Specifies the type of the input (e.g., text, password, email, etc.).
+- **`max` and `min`**: Specify the range of values for input fields (for number, date, etc.).
+- **`pattern=""`**: Specifies a regular expression that the input value must match (commonly used for validation).
+- **`maxlength=""`**: Specifies the maximum number of characters for a text input.
+
+#### Example (Input Type Attributes):
+
+```html
+<input type="number" min="1" max="10" step="1" value="5">
+<input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Enter your email">
+```
+
+### 8. **Meta Tags Attributes**
+
+- **`name=""`**: Specifies the name of the metadata (e.g., `description`, `keywords`, `author`).
+- **`content=""`**: Specifies the content for the meta tag.
+
+#### Example (Meta Tag Attributes):
+
+```html
+<meta name="description" content="This is a webpage about HTML attributes">
+<meta name="author" content="John Doe">
+```
+
+---
+
+## Summary of Common HTML Attributes:
+
+| **Attribute** | **Description** | **Example** |
+|---------------|------------------|-------------|
+| `src` | Specifies the source (for images) | `<img src="image.jpg" />` |
+| `href` | Specifies the link destination (for links) | `<a href="https://example.com">Click me</a>` |
+| `id` | Assigns a unique identifier to an element | `<div id="header"></div>` |
+| `class` | Assigns a class to an element (for styling) | `<p class="highlight">Text</p>` |
+| `style` | Applies inline CSS styles | `<div style="color: red;">Red Text</div>` |
+| `title` | Provides a tooltip or extra information | `<span title="More info">Hover here</span>` |
+| `data-*` | Stores custom data for an element | `<div data-user-id="123">User</div>` |
+| `action` | Defines where to send form data | `<form action="/submit" method="POST">` |
+| `placeholder` | Provides a hint in form input fields | `<input type="text" placeholder="Enter your name">` |
+| `autoplay` | Makes media play automatically | `<video autoplay>Movie</video>` |
+| `controls` | Adds media controls (for video/audio) | `<audio controls>Audio</audio>` |
+| `max` and `min` | Specifies the range for numeric input | `<input type="number" min="1" max="10">` |
+
+---
+
+## Custom Attributes
+
+You can also create your own custom attributes for any element. These attributes don’t have any predefined functionality but can be used to store extra data.
+
+For instance, you can create an attribute like `notifications=""` to store information like the number of unread notifications for a user. Although this won’t have any impact on how the page is displayed, you could use it with JavaScript to change something on the page later.
+
+### Example of Custom Attributes:
+
+```html
+<div notifications="4">You have 4 unread notifications</div>
+```
+
+In this case, the notifications attribute is custom, and it’s just used to store the value "4". You could use JavaScript to access this attribute and display the number of unread notifications elsewhere on the page.
