@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DOM Projects</title>
+    <style>
+      body {
+          font-family: Arial;
+        }
+
+      .subscribe-button {
+         border: none; /* property on rightside and value on leftside. also caleed as property value pair*/
+        background-color: black;
+        color: white;
+        padding: 10px; /*space inside the element*/
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-weight: bold;
+        border-radius: 50px; /*round the corners*/
+        cursor: pointer; /*change the cursor to pointer when hovering over the button*/
+        margin-bottom: 30px; /* margin- space on the outside of the element */
+      }
+
+      .is-subscribed {
+          background-color: rgb(240, 240, 240); /*rgb means reb blue and green.
+          it ranges from 0-255
+          0 = less color, darker
+          255 = more color, lighter
+          */
+          color: black;
+        }
+
+        .cost-input {
+          font-size: 15px;
+          /*
+          padding-top: 10px;
+          padding-bottom: 10px;
+          padding-left: 10px;
+          padding-right: 10px;
+          */
+          padding: 10px; /*same as above*/
+        }
+
+        .calculate-button {
+        background-color: green;
+        color: white;
+        border: none;
+        font-size: 15px;
+        padding: 12px 15px; /* first value is vertical padding and second value is horizontal padding */
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <p>YouTube Subscribe Button</p>
+    <button onclick="
+      subscribe();
+    " class="js-subscribe-button subscribe-button">
+      Subscribe
+    </button>
+
+    <p>Amazon Shipping Calculator</p>
+    <input placeholder="Cost of order" class="js-cost-input cost-input" onkeydown="
+      handleCostKeydown(event);
+    ">
+    <button onclick="
+      calculateTotal(); 
+    " class="calculate-button">Calculate</button>
+    <p class="js-total-cost"></p>
+
+    <script>
+      String(25)
+      console.log('25' - 5);
+      console.log('25' + 5);
+
+      window.document
+      window.console.log('window');
+      window.alert
+
+      function handleCostKeydown(event) {
+        if (event.key === 'Enter') {
+          calculateTotal();
+        }
+      }
+
+      function calculateTotal() {
+        const inputElement = document.querySelector('.js-cost-input');
+        let cost = Number(inputElement.value);
+
+        if (cost < 40) {
+          cost = cost + 10;
+        }
+
+        document.querySelector('.js-total-cost')
+          .innerHTML = `$${cost}`;
+      }
+
+      function subscribe() {
+        const buttonElement = document.querySelector('.js-subscribe-button');
+
+        if (buttonElement.innerText === 'Subscribe') {
+          buttonElement.innerHTML = 'Subscribed';
+          buttonElement.classList.add('is-subscribed');
+          //.classList gives us control of the class atrribute of the element
+          //classList is an object wich has properties and methods
+          //.add() adds an element to the class
+          //typing a . only makes sense in querySelector
+        } else {
+          buttonElement.innerHTML = 'Subscribe';
+          buttonElement.classList.remove('is-subscribed'); //.remove() removes an element from the class
+        }
+      }
+      
+    </script>
+  </body>
+</html>

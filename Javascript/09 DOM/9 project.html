@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dom projects</title>
+</head>
+<body>
+
+  <p>YouTube Subscribe Button</p>
+    <button onclick="
+      subscribe();
+    " class="js-subscribe-button">
+      Subscribe
+    </button>
+
+    <p>Amazon Shipping Calculator</p>
+    <input placeholder="Cost of order" class="js-cost-input" onkeydown="
+      handleCostKeydown(event);
+    ">
+    
+    <!-- every event listner also gets an event object -->
+    <!--html has another element onKeyDown which runs the javascript element when the user types something in the input field. This is a good way to check if the user is typing something in the input field. 
+    Now evertime we type something in the input field it will show typing in the console
+    -->
+    <!--
+    clicks, keydowns are events
+    onclick,onkeydown, onkeyup are event listeners
+    -->
+
+    <!--
+    Event listeners are functions that are called when a certain event happens
+    onclick - click,
+    onkeydown - when a key is pressed down
+    onkeyup - when a key is released
+    onScroll - when the page is scrolled
+    onmouseover - when the mouse is over an element
+    onmouseout - when the mouse is out of an element
+    onload - when the page is loaded
+    onmouseenter - when the mouse enters an element
+    onmouseleave - when the mouse leaves an element
+    -->
+
+    <button onclick="
+      calculateTotal();
+    ">Calculate</button> 
+    <p class="js-total-cost"></p>
+
+  <script>
+    //event is not exist inside the function and to put the event object inside the function we need to use parameter
+    function handleCostKeydown(event) {
+      if (event.key === 'Enter') {
+        calculateTotal();
+      }
+    }
+
+    function calculateTotal(){
+      const inputElement = document.querySelector('.js-cost-input');
+      let cost = Number(inputElement.value); //parse the string to a number
+      // console.log(cost);
+      // console.log(typeof cost);
+
+  if(cost < 40 ){
+    cost = cost + 10; //type coercion, whenever we get the value from the DOM the value will be string.
+    //To convert it to a number we can use the Number function
+    console.log(cost);
+  }
+
+  document.querySelector('.js-total-cost').innerHTML = `Total cost is $${cost}`;
+}
+
+    function subscribe() {
+        const buttonElement = document.querySelector('.js-subscribe-button');
+
+        if (buttonElement.innerText === 'Subscribe') {
+          buttonElement.innerHTML = 'Subscribed';
+        } else {
+          buttonElement.innerHTML = 'Subscribe';
+        }
+      }
+
+  </script>
+  
+</body>
+</html>
+
+<!--
+String(25); //this will convert the number to a string
+    console.log('25'- 5); //this will give us 20
+    console.log('25' + 5); //this will give us 255
+    //this is called type coercion
+    
+window object
+document object represents the web page and the window object represents the browser (including console and window)
+window.alert('hello'); //this will show an alert box with the message hello
+we dont have to type "window" javascript automatically adds it
+ -->
