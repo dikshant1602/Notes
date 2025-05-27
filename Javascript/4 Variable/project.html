@@ -1,0 +1,51 @@
+<!-- 
+Objective:
+Create buttons that:
+* Show cart quantity
+* Add 1, 2, or 3 items
+* Reset the cart
+
+Concepts Involved:
+* Variables (`let`)
+* Shorthand operators (`+=`, `++`)
+* Template strings (e.g., `` `Cart: ${cartQuantity}` ``)
+* Inline JavaScript with `onclick` 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cart quantity</title>
+</head>
+<body>
+  <button onclick="
+    console.log(`cart quantity: ${cartQuanitiy}`);"> <!--template string to insert a value into the string-->
+    show quantity
+  </button>
+  <button onclick="
+    //cartQuanitiy = cartQuanitiy + 1;
+    //cartQuanitiy += 1; // shorthand for cartQuanitiy = cartQuanitiy + 1;
+  cartQuanitiy ++; // even shorter way to add 1 to a variable
+  
+    console.log(`cart quantity: ${cartQuanitiy}`);
+  ">add to cart</button>
+  <button onclick="
+  //cartQuanitiy = cartQuanitiy + 2;
+  cartQuanitiy +=2; // shorthand for cartQuanitiy = cartQuanitiy + 2;
+  console.log(`cart quantity: ${cartQuanitiy}`);
+  ">2</button>
+  <button onclick="
+  cartQuanitiy = cartQuanitiy + 3;
+  console.log(`cart quantity: ${cartQuanitiy}`);
+  ">3</button>
+  <button onclick="cartQuanitiy = 0;
+  console.log('cart was reset');
+  console.log(`cartQuanitiy: ${cartQuanitiy}`)">reset cart</button>
+
+  <script>
+    let cartQuanitiy = 0;
+  </script>
+</body>
+</html>
