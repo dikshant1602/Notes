@@ -41,6 +41,11 @@ function autoplay() {
   }
 }
 
+//adding event listner to autoplay button
+document.querySelector('.js-auto-play-button').addEventListener('click', () => {
+  autoplay();
+});
+
 //adding event listner
 document.querySelector('.js-rock-button')
   .addEventListener('click', () => {
