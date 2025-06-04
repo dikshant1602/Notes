@@ -1,5 +1,51 @@
-# HTML Tag Attributes ✨
+# **HTML Table Attributes**
 
+## **Table of Contents**  
+
+1. **Introduction to HTML Tag Attributes**  
+   - What Are HTML Attributes?  
+   - How Attributes Modify Elements  
+
+2. **How to Use Attributes**  
+   - Syntax of Attributes  
+   - Example: Adding a `title` Attribute  
+
+3. **HTML Attributes Categories**  
+   - **3.1 Global Attributes**  
+     - `id`, `class`, `style`, `title`, `data-*`  
+     - Example Usage  
+   - **3.2 Form Elements Attributes**  
+     - `action`, `method`, `name`, `placeholder`, `required`, `value`  
+     - Example Usage  
+   - **3.3 Image Elements Attributes**  
+     - `srcset`, `width`, `height`, `loading`, `alt`  
+     - Example Usage  
+   - **3.4 Audio and Video Elements Attributes**  
+     - `controls`, `autoplay`, `muted`, `loop`, `poster`  
+     - Example Usage  
+   - **3.5 Anchor (Link) Attributes**  
+     - `target` (`_blank`, `_self`, etc.), `rel` (`nofollow`, `noopener`)  
+     - Example Usage  
+   - **3.6 Table Attributes**  
+     - `colspan`, `rowspan`, `scope`  
+     - Example Usage  
+   - **3.7 Input Type Attributes**  
+     - `type`, `min`/`max`, `pattern`, `maxlength`  
+     - Example Usage  
+   - **3.8 Meta Tags Attributes**  
+     - `name`, `content`  
+     - Example Usage  
+
+4. **Summary of Common HTML Attributes**  
+   - Quick Reference Table (Attribute, Description, Example)  
+
+5. **Custom Attributes**  
+   - Purpose of Custom Attributes  
+   - Example: `notifications` Attribute  
+
+---
+
+## HTML Tag 
 HTML attributes are like extra bits of information that you can add to HTML tags. They help describe or modify the behavior of an element. Think of them like the "features" or "details" about an object. For example, if a person has blue eyes, that would be an attribute of the person, just as color or style can be attributes of HTML tags.
 
 ## How to Use Attributes
