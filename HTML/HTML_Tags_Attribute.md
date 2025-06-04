@@ -1,50 +1,47 @@
-HTML Tag Attributes
-Table of Contents
+# HTML Tag Attributes
 
-Introduction to HTML Tag Attributes
-What Are HTML Attributes?
-How Attributes Modify Elements
+## Table of Contents
+1. [Introduction to HTML Tag Attributes](#introduction-to-html-tag-attributes)
+   - [What Are HTML Attributes?](#what-are-html-attributes)
+   - [How Attributes Modify Elements](#how-attributes-modify-elements)
+2. [How to Use Attributes](#how-to-use-attributes)
+   - [Syntax of Attributes](#syntax-of-attributes)
+   - [Example: Adding a title Attribute](#example-adding-a-title-attribute)
+3. [HTML Attributes Categories](#html-attributes-categories)
+   - [Global Attributes](#global-attributes)
+   - [Form Elements Attributes](#form-elements-attributes)
+   - [Image Elements Attributes](#image-elements-attributes)
+   - [Audio and Video Elements Attributes](#audio-and-video-elements-attributes)
+   - [Anchor (Link) Attributes](#anchor-link-attributes)
+   - [Table Attributes](#table-attributes)
+   - [Input Type Attributes](#input-type-attributes)
+   - [Meta Tags Attributes](#meta-tags-attributes)
+4. [Summary of Common HTML Attributes](#summary-of-common-html-attributes)
+5. [Custom Attributes](#custom-attributes)
 
+---
 
-How to Use Attributes
-Syntax of Attributes
-Example: Adding a title Attribute
-
-
-HTML Attributes Categories
-Global Attributes
-Form Elements Attributes
-Image Elements Attributes
-Audio and Video Elements Attributes
-Anchor (Link) Attributes
-Table Attributes
-Input Type Attributes
-Meta Tags Attributes
-
-
-Summary of Common HTML Attributes
-Custom Attributes
-
-
-Introduction to HTML Tag Attributes 
+## Introduction to HTML Tag Attributes <a name="introduction-to-html-tag-attributes"></a>
 HTML attributes provide additional information about elements, modifying their behavior or appearance. They are like "features" or "details" that describe an element, similar to how eye color describes a person.
-What Are HTML Attributes? 
 
-Attributes are specified in the opening tag of an HTML element.
-They typically use a name/value pair format: name="value".
-Some attributes are boolean, where their presence alone activates them (e.g., required).
+### What Are HTML Attributes? <a name="what-are-html-attributes"></a>
+- Attributes are specified in the opening tag of an HTML element.
+- They typically use a name/value pair format: `name="value"`.
+- Some attributes are boolean, where their presence alone activates them (e.g., `required`).
 
-How Attributes Modify Elements 
+### How Attributes Modify Elements <a name="how-attributes-modify-elements"></a>
 Attributes can:
+- Change an element’s appearance (e.g., `style` for inline CSS).
+- Define behavior (e.g., `onclick` for JavaScript events).
+- Provide metadata (e.g., `alt` for accessibility).
 
-Change an element’s appearance (e.g., style for inline CSS).
-Define behavior (e.g., onclick for JavaScript events).
-Provide metadata (e.g., alt for accessibility).
+---
 
-
-How to Use Attributes 
+## How to Use Attributes <a name="how-to-use-attributes"></a>
 Attributes are added inside the opening tag of an HTML element, providing extra information or functionality.
-Syntax of Attributes 
+
+### Syntax of Attributes <a name="syntax-of-attributes"></a>
+```html
 <element attribute="value">Content</element>
 
 Example: Adding a title Attribute 
@@ -243,4 +240,3 @@ Example
 JavaScript Access
 const div = document.querySelector('div');
 console.log(div.dataset.notifications); // "4"
-
