@@ -1,4 +1,4 @@
-#  Web Development Notes
+# Web Development Notes
 
 Welcome! This repository contains my personal notes on **Web Development**. These notes document what I’ve learned, practiced, and explored while studying web technologies. 
 
@@ -6,15 +6,16 @@ You're welcome to clone or fork this repository for your own use — contributio
 
 ---
 
-##  Table of Contents
+## Table of Contents
 
 1. [HTML](#html)
 2. [CSS](#css)
-3. [FreeCodeCamp - Legacy JavaScript Algorithms and Data Structures](#freecodecamp---legacy-javascript-algorithms-and-data-structures)
+3. [JavaScript](#javascript)
+4. [FreeCodeCamp - Legacy JavaScript Algorithms and Data Structures](#freecodecamp---legacy-javascript-algorithms-and-data-structures)
 
 ---
 
-##  Overview
+## Overview
 
 ### HTML
 
@@ -47,10 +48,24 @@ Topics covered:
 - Responsive design with media queries
 - CSS variables and custom properties
 
+---
+
+### JavaScript
+
+JavaScript is the programming language that makes web pages interactive. It allows dynamic content updates, user interaction handling, and asynchronous operations.
+
+Key concepts covered:
+- Variables (`let`, `const`, `var`), data types, and operators
+- Functions (declarations, expressions, arrow functions)
+- DOM manipulation (selecting elements, event listeners)
+- Control flow (conditionals, loops)
+- Objects, arrays, and common methods
+- ES6+ features (template literals, destructuring, spread/rest)
+- Asynchronous JS (callbacks, promises, async/await)
+- Error handling with try/catch
 
 ---
 
 ### FreeCodeCamp - Legacy JavaScript Algorithms and Data Structures
 
 This section includes detailed notes from FreeCodeCamp's **JavaScript** curriculum.
-
